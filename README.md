@@ -1,0 +1,1 @@
+This is simple redux-toolkit project made by me that uses React and RTK.

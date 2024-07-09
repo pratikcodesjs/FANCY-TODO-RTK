@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(360deg, #fffdf3, #f2f0f6, #e5e3f9, #d8d6fc, #cbc9ff); 
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContainer {
+  background-color: #f2f0f6; 
+  width: 100%; 
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  color: #333; /* Changed title text color to dark grey */
+  font-size: 2rem; 
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif; /* Changed font to Arial for a professional look */
+}
+
+.tableContainer {
+  width: 100%; 
+  overflow-x: auto; 
+  margin-top: 20px; 
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox input {
+  margin-top: 9px;
+}
+
+.checkbox input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cbc9ff; 
+  border-radius: 4px; 
+  outline: none;
+  cursor: pointer;
+  background-color: #fffdf3; 
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.checkbox input[type="checkbox"]:checked {
+  background-color: #00ff37; 
+  border-color: #cbc9ff;
+}
+
+.checkbox input[type="checkbox"]:focus {
+  box-shadow: 0 0 5px rgba(203, 201, 255, 0.5); 
+}
+
+table {
+  width: 100%; 
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #6345eb; 
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #e5e3f9; /* Light purple background for even rows */
+}
+
+tr:nth-child(even) button {
+  background-color: #cbc9ff; /* Lightest purple for buttons in even rows */
+  padding: 8px 20px; /* Increased button padding */
+  border-radius: 5px;
+  border: none; /* Removed border */
+  color: #333; /* Changed button text color to dark grey */
+  font-size: 1rem; /* Adjusted button font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+tr:nth-child(even) button:hover {
+  background-color: #bbb9f7; /* Darker purple on hover for buttons in even rows */
+  color: #fff; /* Changed button text color on hover to white */
+}
+
+tr:nth-child(odd) {
+  background-color: #fffdf3; /* Lightest yellow background for odd rows */
+}
+
+tr:nth-child(odd) button {
+  background-color: #d8d6fc; /* Light purple for buttons in odd rows */
+  padding: 8px 20px; /* Increased button padding */
+  border-radius: 5px;
+  border: none; /* Removed border */
+  color: #333; /* Changed button text color to dark grey */
+  font-size: 1rem; /* Adjusted button font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+tr:nth-child(odd) button:hover {
+  background-color: #cbc9ff; /* Darker purple on hover for buttons in odd rows */
+  color: #fff; /* Changed button text color on hover to white */
+}
+
+.addForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;;
+}
+
+.addForm input {
+  width: 70%; 
+  padding: 12px; /* Increased input padding */
+  font-size: 1rem; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333; /* Changed input text color to dark grey */
+}
+
+.addForm button {
+  color: #fff;
+  padding: 12px; /* Increased button padding */
+  font-size: 1rem; 
+  font-weight: bold;
+  background-color: #6345eb; 
+  border: none; /* Removed border */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addForm button:hover {
+  background-color: #ffacb7; /* Darker pink on hover */
+}
